@@ -1,5 +1,5 @@
 name: flutter_libmad
-description: A new Flutter plugin project.
+description: A Flutter plugin providing bindings to the libmad library through Dart FFI, enabling high-quality MP3 decoding in your Flutter applications.
 version: 0.0.1
 homepage: https://grevity.in
 
