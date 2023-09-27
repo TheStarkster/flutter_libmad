@@ -1,7 +1,7 @@
 name: flutter_libmad
 description: A new Flutter plugin project.
 version: 0.0.1
-homepage: grevity.in
+homepage: https://grevity.in
 
 environment:
   sdk: '>=3.1.0 <4.0.0'

@@ -20,11 +20,8 @@ class FlutterLibmad {
   FlutterLibmad({ required this.onPcmData }) {
     globalPcmDataCallback = onPcmData;
 
-    _lib = Platform.isAndroid
-        ? DynamicLibrary.open("libdecoder.so")
-        : DynamicLibrary.process();
-    _decodeFile = _lib
-        .lookupFunction<DecodeFileC, DecodeFileDart>('decode_file');
+    _lib = Platform.isAndroid ? DynamicLibrary.open("libdecoder.so") : DynamicLibrary.process();
+    _decodeFile = _lib.lookupFunction<DecodeFileC, DecodeFileDart>('decode_file');
   }
 
   void decode(String filePath) {
